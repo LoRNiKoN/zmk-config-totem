@@ -19,10 +19,10 @@
 #define ADJ  3
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <400>;
 };
 
 / {
@@ -38,23 +38,6 @@
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <34 35>;
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
         };
     };
 
@@ -106,10 +89,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &kp BACKSLASH  &kp UP    &kp FSLH   &kp LBRC    &kp RBRC   &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-        &kp LSHFT  &kp LEFT       &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP      &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                  &trans    &trans     &trans      &kp ENTER  &kp EQUAL     &kp N0
+        &kp ESC    &kp NON_US_BACKSLASH  &kp UP    &kp FSLH   &kp LBRC    &kp RBRC       &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+        &kp LSHFT  &kp LEFT              &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP             &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                                         &trans    &trans     &trans      &kp LS(ENTER)  &kp EQUAL     &kp N0
             >;
         };
 
