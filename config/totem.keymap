@@ -116,7 +116,7 @@
 
             bindings = <
         &kp EXCL  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp DLLR  &kp PRCNT         &kp CARET     &kp AMPS      &kp STAR    &kp SQT     &kp DQT
-        &trans    &trans             &trans            &trans    &kp AT            &kp C_MUTE    &trans        &trans      &kp HASH    &kp PIPE
+        &trans    &trans             &trans            &trans    &kp LS(SQT)       &kp C_MUTE    &trans        &trans      &kp HASH    &kp PIPE
 &trans  &trans    &trans             &trans            &trans    &trans            &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp NON_US_BACKSLASH  &trans
                                      &trans            &trans    &kp LEFT_SHIFT    &trans        &trans        &trans
             >;
