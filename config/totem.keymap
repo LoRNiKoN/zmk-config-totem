@@ -141,10 +141,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &kp F21  &kp F20        &kp F19  &trans    &trans        &kp F7  &kp F8  &kp F9  &kp F12
-        &trans  &kp F18  &kp F17        &kp F16  &trans    &trans        &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &kp F15  &kp F14        &kp F13  &trans    &trans        &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                         &kp LS(LG(S))  &trans   &trans    &kp LEFT_ALT  &trans  &trans
+        &trans  &kp F21  &kp F20        &kp F19  &kp LC(LA(LG(N0)))          &trans        &kp F7  &kp F8  &kp F9  &kp F12
+        &trans  &kp F18  &kp F17        &kp F16  &kp LA(LG(LC(NUMBER_1)))    &trans        &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &kp F15  &kp F14        &kp F13  &kp LG(LC(LA(NUMBER_2)))    &trans        &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                         &kp LS(LG(S))  &trans   &trans                      &kp LEFT_ALT  &trans  &trans
             >;
         };
     };
